@@ -1,0 +1,23 @@
+/* Contém todo o conteúdo da página */
+body {
+    background-color: snow;
+}
+
+/* Imagem ao lado do nome da Instituição */
+.img-da-navbar {
+    width: 40px;
+    height: 40px;
+}
+
+/* Rodapé principal da página */
+footer {
+    /* Alterar o conteúdo do rodapé */
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    /* Configurar Box-Model */
+    background-color: rgb(60, 60, 60);
+    padding: 35px;      /* Distância entre o elemento e a sua própria borda */
+    /* margin-top: 100px;  /* Distância de um elemento para outro */
+}
