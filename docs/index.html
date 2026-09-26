@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!-- Metadados da página (não visíveis) -->
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title> Projeto Portal Institucional </title>
+        <!-- Vincular ao favicon.io da minha foto -->
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico"/>
+        <!-- Vincular ao CSS externo do projeto -->
+        <link rel="stylesheet" href="index.css"/>
+        <!-- Vincular ao Boostrap via CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"> </script>
+
+    </head>
+
+    <body>
+        <!-- Cabeçalho da página -->
+        <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de um cabeçalho -->
+        <header>
+            <!--===== Requisito RF01 – Barra de Navegação =====-->
+
+            <!-- Criando a NavBar -->
+            <nav class="navbar navbar-expand-lg navbar-dark - bg-dark">
+                <!-- Container Flúido da Navbar -->
+                <div class="container-fluid">
+                    <!-- Link para a própria página (Logo e nome da instituição) -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../img/michael.jpg" class="img-da-navbar"/>
+                        Instituição Michael Chioda 
+                    </a>
+
+                    <!-- Criando o botão do menu da barra de navegação -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                        <span class="navbar-toggler-icon"> </span>
+                    </button>
+
+                    <!-- Criando os itens do menu da barra de navegação -->
+                    <!-- "collapse navbar-collapse" permitirá que a barra recolha -->
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"> Home </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"> Cursos </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"> Notícias </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"> Contato </a>
+                            </li>
+
+                            <!-- Criando o menu com DropDown dento do menu principal -->
+                            <li class="nav-item dropdown">
+                                
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Áreas de Ensino
+                                </a>
+
+                                <!-- Criando os itens do menu com DropDown -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                                    <li> 
+                                        <a class="dropdown-item" href="#"> 
+                                            Engenharia da Computação 
+                                        </a> 
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#"> 
+                                            Engenharia de Software 
+                                        </a> 
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#"> 
+                                            Ciência da Computação
+                                        </a> 
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#"> 
+                                            Análise e Desenvolvimento de Sistemas (ADS)
+                                        </a> 
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+            <!--===============================================-->
+
+        </header>
+
+
+        <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de uma seção temática (nesse caso, do conteúdo principal) -->
+        <section>
+
+            <!-- Requisito RF02 – Seção Principal -->
+            <!-- Requisito RF03 – Catálogo de Cursos -->
+            <!-- Requisito RF04 – Área de Indicadores Institucionais -->
+            <!-- Requisito RF05 – Consulta de Cursos -->
+            <!-- Requisito RF06 – Formulário de Contato -->
+            <!-- Requisito RF07 – Visualização de Detalhes do Curso -->
+
+        </section>
+
+
+        <!-- Rodapé da página -->
+        <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de um rodapé -->
+        <footer>
+            <!-- Requisito RF08 – Rodapé Institucional -->
+            
+            <p> &copy; Michael Chioda 2026 - Todos os direitos reservados </p>
+
+        </footer>
+
+    </body>
+
+</html>
