@@ -15,6 +15,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"> </script>
+        <!-- Vincular ao Boostrap Icons via CDN (é separado do principal acima) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 
     </head>
 
@@ -25,7 +27,7 @@
             <!--===== Requisito RF01 – Barra de Navegação =====-->
 
             <!-- Criando a NavBar -->
-            <nav class="navbar navbar-expand-lg navbar-dark - bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <!-- Container Flúido da Navbar -->
                 <div class="container">
                     <!-- Link para a própria página (Logo e nome da instituição) -->
@@ -46,7 +48,7 @@
                         <ul class="navbar-nav ms-auto">
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="#"> Home </a>
+                                <a class="nav-link active" href="#titulo-home"> Home </a>
                             </li>
 
                             <li class="nav-item">
@@ -119,24 +121,42 @@
             <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de uma seção temática -->
             <!-- Seção Principal -->
             <section>
+                <!-- Título da página -->
+                <div class="p-2 mt-5">
+                    <h1 class="p-2 mt-4 mb-3 text-center" id="titulo-home"> Instituto Michael Chioda </h1>
+                </div>
                 <!-- Container da Hero Section -->
-                <div class="container mb-5">
-                    <!-- Título da página -->
-                    <h1 class="p-2 mt-4 mb-4 text-center" id="titulo-home"> Instituto Michael Chioda </h1>
+                <div class="container-fluid mb-5">
                     <!-- Linha 1 do container -->
                     <div class="row">
                         <!-- Colunas da linha (Soma do tamanho de todas as colunas deve ser 12) -->
                         <!-- Coluna 1 -->
-                        <div class="col-sm-6 bg-dark text-white text-center p-3 mb-2">
+                        <div class="col-sm-6 bg-dark text-center p-5 mb-2">
                             <img src="img/michael.jpg" width="330px" height="330px" class="img-hero-section"/> 
                         </div>
                         <!-- Coluna 2 -->
-                        <div class="col-sm-6 bg-dark text-white text-left p-3 mb-2">
+                        <div class="col-sm-6 bg-dark text-white p-5 mb-2">
                             <p class="hero-section-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies. Pellentesque pulvinar, nibh at porttitor ullamcorper, leo nisl volutpat dui, at molestie enim libero eget erat. Aenean quis rhoncus dui. Aenean ullamcorper, felis quis faucibus posuere, justo velit mattis quam, id pellentesque sapien elit fermentum arcu. Suspendisse potenti. Aliquam ut eros tortor. Donec ut eros non arcu maximus auctor. Curabitur dignissim mauris sed lorem blandit blandit. Vivamus sodales sollicitudin dui sed ultricies. Pellentesque diam tortor, imperdiet id lectus sed, iaculis efficitur est. Sed eget metus sagittis, vulputate orci id, accumsan nunc. Praesent iaculis ullamcorper mauris sit amet egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vulputate sapien mattis euismod porta.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. 
+                                Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies. 
+                                Pellentesque pulvinar, nibh at porttitor ullamcorper, leo nisl volutpat dui, at molestie enim libero eget erat. Aenean quis rhoncus dui. 
+                                Aenean ullamcorper, felis quis faucibus posuere, justo velit mattis quam, 
+                                id pellentesque sapien elit fermentum arcu. Suspendisse potenti. Aliquam ut eros tortor. 
+                                Donec ut eros non arcu maximus auctor. Curabitur dignissim mauris sed lorem blandit blandit.
+                                Vivamus sodales sollicitudin dui sed ultricies. Pellentesque diam tortor, 
+                                imperdiet id lectus sed, iaculis efficitur est. Sed eget metus sagittis, 
+                                vulputate orci id, accumsan nunc. Praesent iaculis ullamcorper mauris sit amet egestas. 
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Vivamus vulputate sapien mattis euismod porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Vivamus vulputate sapien mattis euismod porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Vivamus vulputate sapien mattis euismod porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Vivamus vulputate sapien mattis euismod porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                                Vivamus vulputate sapien mattis euismod porta.
                             </p>
                             <!-- Botão da Hero Section que direciona o usuário para a seção Área de Indicadores Institucionais -->
-                            <a href="#" class="btn btn-primary"> Saiba mais </a>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary"> Saiba mais </a>
+                            </div>
 
                         </div>
 
@@ -152,191 +172,239 @@
             <section>
                 <!-- Container do Catálogo de Cursos -->
                 <div class="container mb-5">
-                    <h2 class="p-2 mt-4 mb-4 text-left"> Catálogo de Cursos </h2>
+                    <span class="display-6 p-2 text-left fw-bold"> Catálogo de Cursos </span>
                     <!-- Linha 1 do container -->
-                    <div class="row">
-
-                        <!-- Criando um card para Introdução ao Python -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Introdução ao Python"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Introdução ao Python </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
+                    <!-- "row-cols-sm-4" para deixar 4 cards fixos por linha -->
+                    <div class="row row-cols-sm-4 mt-4">
+                        <!-- Coluna 1 da linha 1 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Introdução ao Python -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Introdução ao Python"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Introdução ao Python </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+                                    
                                 </div>
                                 <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
 
-                            </div>                         
+                            </div>
 
                         </div>
 
-                        <!-- Criando um card para Python: AI, Machine Learning and Deep Learnig -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Python: AI, Machine Learning and Deep Learnig"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Python: AI, Machine Learning and Deep Learnig </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
+                        <!-- Coluna 2 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Python: AI, Machine Learning and Deep Learnig -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Python: AI, Machine Learning and Deep Learnig"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Python: AI, Machine Learning and Deep Learnig </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+
                                 </div>
                                 <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
 
-                            </div>                         
+                            </div>
+
+                        </div>
+                    
+                        <!-- Coluna 3 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Desenvolvimento Web -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Desenvolvimento Web"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Desenvolvimento Web </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- Botão do card -->
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                        <!-- Criando um card para Desenvolvimento Web -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Desenvolvimento Web"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Desenvolvimento Web </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
-                                </div>
-                                <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                        <!-- Coluna 4 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Arquitetura de Computadores -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Arquitetura de Computadores"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Arquitetura de Computadores </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
 
-                            </div>                         
+                                </div>                            
+                                <!-- Botão do card -->
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                        <!-- Criando um card para Arquitetura de Computadores -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Arquitetura de Computadores"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Arquitetura de Computadores </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
+                        <!-- Coluna 5 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para ESP32: Fundamentos -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso ESP32: Fundamentos"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> ESP32: Fundamentos </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+
                                 </div>
                                 <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
 
-                            </div>                         
+                            </div>
 
                         </div>
 
-                        <!-- Criando um card para ESP32: Fundamentos -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso ESP32: Fundamentos"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> ESP32: Introdução </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
+                        <!-- Coluna 6 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Java POO -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Java POO"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Java POO </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+
                                 </div>
                                 <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
 
-                            </div>                         
+                            </div>
+                            
+                        </div>
+
+                        <!-- Coluna 7 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Teoria da Computação -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Teoria da Computação"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Teoria da Computação </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <!-- Botão do card -->
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
+                                </div>
+
+                            </div>
 
                         </div>
 
-                        <!-- Criando um card para Java POO -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Java POO"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Java POO </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
-                                </div>
-                                <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
+                        <!-- Coluna 8 -->
+                        <div class="col mb-3">
+                            <!-- Criando um card para Banco de Dados -->
+                            <div class="card">
+                                <!-- Conteúdo do card -->
+                                <div class="card-body text-center">
+                                    <!-- Imagem do card -->
+                                    <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Banco de Dados"/>
+                                    <!-- Título do card -->
+                                    <div class="card-title mt-3">
+                                        <span class="fs-4 fw-bold"> Banco de Dados </span>
+                                    </div>
+                                    <!-- Texto do card -->
+                                    <div class="card-text mt-3">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
+                                        </p>
+                                    </div>
 
-                            </div>                         
-
-                        </div>
-
-                        <!-- Criando um card para Teoria da Computação -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Teoria da Computação"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Teoria da Computação </h5>
-                                </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
                                 </div>
                                 <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
-
-                            </div>                         
-
-                        </div>
-
-                        <!-- Criando um card para Banco de Dados -->
-                        <div class="card" style="width: 18rem;">
-                            <!-- Conteúdo do card -->
-                            <div class="card-body text-center">
-                                <!-- Imagem do card -->
-                                <img src="img/michael.jpg" class="card-img-top" alt="Imagem do curso Banco de Dados"/>
-                                <!-- Título do card -->
-                                <div class="card-title mt-3">
-                                    <h5> Banco de Dados </h5>
+                                <div class="card-footer text-center">
+                                    <a href="#" class="btn btn-success"> Saiba mais </a>
                                 </div>
-                                <!-- Texto do card -->
-                                <div class="card-text mt-3">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies.
-                                    </p>
-                                </div>
-                                <!-- Botão do card -->
-                                <a href="#" class="btn btn-success"> Saiba mais </a>
 
-                            </div>                         
+                            </div>
 
                         </div>
 
@@ -352,26 +420,55 @@
             <section>
                 <!-- Container para Área de Indicadores Institucionais -->
                 <div class="container mb-5">
+                    <!-- fw-bold => Tranformar o texto em negrito -->
+                    <span class="display-6 p-2 text-left fw-bold"> Conheça Nossa Excelência </span>
                     <!-- Linha 1 do container -->
-                    <div class="row">
+                    <!-- Ao invés de usar col-sm-3 em todas as colunas para definir o seu tamanho 
+                         eu posso simplesmente usar "row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center", por exemplo, 
+                         dentro da class="row", ficando: class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center" -->
+                    <div class="row mt-4">
                         <!-- Coluna 1 -->
-                        <div class="col-sm-3 bg-primary p-5 mb-4">
-                            
+                        <!-- rounded-5 => Máximo que dá para arredondar as bordas -->
+                        <!-- shadow-sm => Dar uma sensação de profundidade com uma leve sombra -->
+                        <!-- h-100 => Garante que os 4 cartões fiquem com a mesma altura, independente do tamanho do texto dentro de cada um deles -->
+                        <div class="col-sm-3">
+                            <div class="bg-success rounded-5 shadow-sm text-white text-center p-5 mb-4 h-100">
+                                <!-- Tag <i> é considerada neutra e recomendada para o uso de ícones e imagens -->
+                                <!-- Conteúdo com prefixo bi para exibir um ícone -->
+                                <i class="bi bi-mortarboard-fill fs-1 mb-2 d-block"> </i>
+                                <!-- display-5 => Classe de tipografia do Bootstrap para textos grandes de destaque, com escala própria (display-1 é a maior, display-6 a menor) -->
+                                <!-- d-block => Bloquear o conteúdo inline -->
+                                <span class="display-5 fw-bold d-block"> +10Mil </span>
+                                <span class="fw-bold"> Alunos formados </span>
+                            </div>
                         </div>
                         <!-- Coluna 2-->
-                        <div class="col-sm-3 bg-warning p-5 mb-4">
-
+                        <div class="col-sm-3">
+                            <div class="bg-secondary rounded-5 shadow-sm text-white text-center p-5 mb-4 h-100">
+                                <i class="bi bi-book-fill fs-1 mb-2 d-block"> </i>
+                                <span class="display-5 fw-bold d-block"> +15 </span>
+                                <span class="fw-bold"> Cursos Disponíveis </span>
+                            </div>
                         </div>
                         <!-- Coluna 3 -->
-                        <div class="col-sm-3 bg-success p-5 mb-4">
-
+                        <div class="col-sm-3">
+                            <div class="bg-primary rounded-5 shadow-sm text-white text-center p-5 mb-4 h-100">
+                                <i class="bi bi-person-badge-fill fs-1 mb-2 d-block"> </i>
+                                <span class="display-5 fw-bold d-block"> +10 </span>
+                                <span class="fw-bold"> Professores Altamente Qualificados </span>
+                            </div>
                         </div>
                         <!-- Coluna 4 -->
-                        <div class="col-sm-3 bg-danger p-5 mb-4">
-
+                        <div class="col-sm-3">
+                            <div class="bg-success rounded-5 shadow-sm text-white text-center p-5 mb-4 h-100">
+                                <i class="bi bi-star-fill fs-1 mb-2 d-block"> </i>
+                                <span class="display-5 fw-bold d-block"> 98% </span>
+                                <span class="fw-bold"> Aprovação dos Alunos </span>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
 
             </section>
@@ -380,6 +477,91 @@
 
             <!--===== Requisito RF05 – Consulta de Cursos =====-->
             <section>
+                <!-- Container para a Consulta de Cursos -->
+                <div class="container mb-5"> 
+                    <span class="display-6 p-2 text-left fw-bold"> Informações sobre os cursos </span>
+                    <!-- Linha 1 do container -->
+                    <div class="row p-3">
+                        <!-- Tabela com Boostrap -->
+                        <table class="table mt-3">
+                            <!-- Cabeçalho da tabela  -->
+                            <thead>
+                                <!-- Colunas para o nome do tipo de informação dos cursos -->
+                                <!-- Linha 1 -->
+                                <tr>
+                                    <th scope="col" class="bg-light text-center"> Curso </th>
+                                    <th scope="col" class="bg-light"> Modalidade </th>
+                                    <th scope="col" class="bg-light"> Carga Horária </th>
+                                    <th scope="col" class="bg-light"> Valor investido </th>
+                                </tr>
+                            </thead>
+                            <!-- Corpo da tabela -->
+                            <tbody>
+                                <!-- Linhas para o nome dos cursos e suas informações -->
+                                <!-- Linha 2 -->
+                                <tr>
+                                    <th scope="row"> Introdução ao Python </th>
+                                    <td> Software </td>
+                                    <td> 40 horas </td>
+                                    <td> R$60,00 </td>
+                                </tr>
+                                <!-- Linha 3 -->
+                                <tr>
+                                    <th scope="row"> Python: AI, Machine Learning and Deep Learnig </th>
+                                    <td> Software </td>
+                                    <td> 80 horas </td>
+                                    <td> R$80,00 </td>
+                                </tr>
+                                <!-- Linha 4 -->
+                                <tr>
+                                    <th scope="row"> Desenvolvimento Web </th>
+                                    <td> Software </td>
+                                    <td> 60 horas </td>
+                                    <td> R$75,00 </td>
+                                </tr>
+                                <!-- Linha 5 -->
+                                <tr>
+                                    <th scope="row"> Arquitetura de Computadores </th>
+                                    <td> Hardware </td>
+                                    <td> 50 horas </td>
+                                    <td> R$69,00 </td>
+                                </tr>
+                                <!-- Linha 6 -->
+                                <tr>
+                                    <th scope="row"> ESP32: Fundamentos </th>
+                                    <td> Hardware </td>
+                                    <td> 40 horas </td>
+                                    <td> R$60,00 </td>
+                                </tr>
+                                <!-- Linha 7 -->
+                                <tr>
+                                    <th scope="row"> Java POO </th>
+                                    <td> Software </td>
+                                    <td> 40 horas </td>
+                                    <td> R$60,00 </td>
+                                </tr>
+                                <!-- Linha 8 -->
+                                <tr>
+                                    <th scope="row"> Teoria da Computação </th>
+                                    <td> Software </td>
+                                    <td> 50 horas </td>
+                                    <td> R$69,00 </td>
+                                </tr>
+                                <!-- Linha 9 -->
+                                <tr>
+                                    <th scope="row"> Banco de Dados </th>
+                                    <td> Software </td>
+                                    <td> 100 horas </td>
+                                    <td> R$100,00 </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
 
             </section>
             <!--===============================================-->
@@ -387,7 +569,7 @@
 
             <!--===== Requisito RF06 – Formulário de Contato =====-->
             <section>
-
+                
             </section>
             <!--===============================================-->
 
@@ -405,10 +587,37 @@
         <!-- Rodapé da página -->
         <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de um rodapé -->
         <footer>
-            <!-- Requisito RF08 – Rodapé Institucional -->
+            <!--===== Requisito RF08 – Rodapé Institucional =====-->
+            <!-- Testar com container de duas linhas: uma para rodapé institucional e outra para as minhas redes sociais -->
             
+
+            <!--=================================================-->
             <p> &copy; Michael Chioda 2026 - Todos os direitos reservados </p>
-            <!-- Colocar minhas redes sociais em ícones -->
+            <!-- Ícone GitHub-->
+            <a href="https://github.com/michaelgfchioda" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            <!-- Ícone Linkedin -->
+            <a href="https://www.linkedin.com/in/michael-chioda-25223b309/" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            <!-- Ícone Lattes -->
+            <a href="https://lattes.cnpq.br/3414648656575666" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=KyGmCaneSs3k&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            <!-- Ícone Instagram -->
+            <a href="https://www.instagram.com/michaelgfchioda" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            <!-- Ícone X (Twitter)-->
+            <a href="https://x.com/michaelchioda" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=oaaSr6h7kwm6&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            <!-- Ícone YouTube -->
+            <a href="https://www.youtube.com/@michaelgfchioda" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" width="30px" height="30px" alt="Ícone Linkedin"/>
+            </a>
+            
 
         </footer>
 
