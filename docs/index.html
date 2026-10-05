@@ -25,7 +25,6 @@
         <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de um cabeçalho -->
         <header>
             <!--===== Requisito RF01 – Barra de Navegação =====-->
-
             <!-- Criando a NavBar -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <!-- Container Flúido da Navbar -->
@@ -48,7 +47,7 @@
                         <ul class="navbar-nav ms-auto">
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="#instituicao-michael-chioda"> Home </a>
+                                <a class="nav-link active" href="#hero-section"> Home </a>
                             </li>
 
                             <li class="nav-item">
@@ -117,40 +116,28 @@
         <!-- Tag que representa o conteúdo principal e único da página (pode agrupar várias <section>) -->
         <main>
             <!--===== Requisito RF02 – Seção Principal =====-->
-            
             <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de uma seção temática -->
             <!-- Seção Principal -->
-            <section>
-                <!-- Título da página -->
-                <div class="p-2 mt-5">
-                    <h1 class="p-2 mt-4 mb-3 text-center" id="instituicao-michael-chioda"> Instituição Michael Chioda </h1>
-                </div>
+            <section id="hero-section" class="bg-dark text-white py-5 mt-5">
                 <!-- Container da Hero Section -->
-                <div class="container-fluid mb-5">
+                <div class="container">
                     <!-- Linha 1 do container -->
-                    <div class="row row-col-xs-6">
-                        <!-- Colunas da linha (Soma do tamanho de todas as colunas deve ser 12) -->
-                        <!-- Coluna 1 -->
-                        <div class="col bg-dark text-center p-5 mb-2">
-                            <img src="img/michael.jpg" width="430px" height="430px" class="img-hero-section"/> 
-                            <p class="hero-section-text text-white mt-5">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar venenatis nisl, eu commodo tortor lobortis ut. 
-                                Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies. 
-                                Pellentesque pulvinar, nibh at porttitor ullamcorper, leo nisl volutpat dui, at molestie enim libero eget erat. Aenean quis rhoncus dui. 
-                                Aenean ullamcorper, felis quis faucibus posuere, justo velit mattis quam, 
-                                id pellentesque sapien elit fermentum arcu. Suspendisse potenti. Aliquam ut eros tortor. 
-                                Donec ut eros non arcu maximus auctor. Curabitur dignissim mauris sed lorem blandit blandit.
-                                Vivamus sodales sollicitudin dui sed ultricies. Donec blandit mi quis blandit aliquet. Phasellus dapibus lorem in dignissim ultricies. 
-                                Pellentesque pulvinar, nibh at porttitor ullamcorper, leo nisl volutpat dui, at molestie enim libero eget erat. Aenean quis rhoncus dui. 
-                                Aenean ullamcorper, felis quis faucibus posuere, justo velit mattis quam, 
-                                id pellentesque sapien elit fermentum arcu. Suspendisse potenti. Aliquam ut eros tortor. 
-                                Donec ut eros non arcu maximus auctor.
+                    <div class="row align-items-center">
+                        <!-- Coluna 1 da linha 1 -->
+                        <div class="col-lg-6 text-center mt-4 mt-lg-0 mb-5">
+                            <!-- Imagem da instituição -->
+                            <img src="img/michael.jpg" alt="Foto institucional" class="img-fluid rounded-4"/>
+                        </div>
+                        <!-- Coluna 2 da linha 1 -->
+                        <div class="col-lg-6">
+                            <!-- Título principal -->
+                            <h1 class="display-4 fw-bold"> Transformando conhecimento em oportunidades reais </h1>
+                            <!-- Texto de apresentação -->
+                            <p class="lead mt-3"> 
+                                A Instituição Michael Chioda forma profissionais preparados para os desafios da tecnologia, unindo ensino de qualidade, infraestrutura moderna e professores altamente qualificados.
                             </p>
                             <!-- Botão da Hero Section que direciona o usuário para a seção Área de Indicadores Institucionais -->
-                            <div class="text-center">
-                                <a href="#conheca-nossa-excelencia" class="btn btn-primary"> Saiba mais </a>
-                            </div>
-
+                            <a href="#conheca-nossa-excelencia" class="btn btn-primary btn-lg mt-3"> Saiba mais </a>
                         </div>
 
                     </div>
@@ -162,10 +149,10 @@
 
 
             <!--===== Requisito RF03 – Catálogo de Cursos =====-->
-            <section>
+            <section id="catalogo-de-cursos" class="mt-5 mb-5">
                 <!-- Container do Catálogo de Cursos -->
-                <div class="container mb-5">
-                    <span class="display-6 p-2 text-left fw-bold" id="catalogo-de-cursos"> Catálogo de Cursos </span>
+                <div class="container">
+                    <span class="display-6 p-2 text-left fw-bold"> Catálogo de Cursos </span>
                     <!-- Linha 1 do container -->
                     <!-- "row-cols-sm-4" para deixar 4 cards fixos por linha -->
                     <div class="row row-cols-sm-4 mt-4">
@@ -188,18 +175,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalIntPython"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalIntPython"> 
                                         Saiba mais 
                                     </a>
                                     
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalIntPython"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
 
@@ -224,18 +204,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPythonAI"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPythonAI"> 
                                         Saiba mais 
                                     </a>
 
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPythonAI"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
 
@@ -260,18 +233,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDesenWeb"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDesenWeb"> 
                                         Saiba mais 
                                     </a>
 
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDesenWeb"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
 
@@ -296,18 +262,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalArqDeComput"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalArqDeComput"> 
                                         Saiba mais 
                                     </a>
 
-                                </div>                            
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalArqDeComput"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
+                                </div>
 
                             </div>
 
@@ -332,18 +291,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalESP32Fund"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalESP32Fund"> 
                                         Saiba mais 
                                     </a>
 
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalESP32Fund"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
 
@@ -368,18 +320,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTeoriaDaComput"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTeoriaDaComput"> 
                                         Saiba mais 
                                     </a>
                                     
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTeoriaDaComp"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
                                 
                             </div>
                             
@@ -404,18 +349,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPOOJava"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPOOJava"> 
                                         Saiba mais 
                                     </a>                                    
 
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPOOJava"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
                             
@@ -440,18 +378,11 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBancoDeDados"> 
+                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBancoDeDados"> 
                                         Saiba mais 
                                     </a>
 
                                 </div>
-                                <!-- Botão do card -->
-                                <!--
-                                <div class="card-footer text-center">
-                                    <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBancoDeDados"> 
-                                        Saiba mais 
-                                    </a>
-                                </div> -->
 
                             </div>
 
@@ -466,9 +397,9 @@
 
 
             <!-- Notícias da página => Requisito RF01 – Barra de Navegação -->
-            <section>
-                <div class="container mb-5">
-                    <span class="display-6 p-2 text-left fw-bold" id="noticias"> Notícias </span>
+            <section id="noticias" class="mb-5">
+                <div class="container">
+                    <span class="display-6 p-2 text-left fw-bold"> Notícias </span>
                     <div class="row row-cols-1 row-cols-md-3 mt-4">
                         <div class="col mt-1">
                             <div class="card h-100">
@@ -745,11 +676,11 @@
 
 
             <!--===== Requisito RF04 – Área de Indicadores Institucionais =====-->
-            <section>
+            <section id="conheca-nossa-excelencia" class="mb-5">
                 <!-- Container para Área de Indicadores Institucionais -->
-                <div class="container mb-5">
+                <div class="container">
                     <!-- fw-bold => Tranformar o texto em negrito -->
-                    <span class="display-6 p-2 text-left fw-bold" id="conheca-nossa-excelencia"> Conheça Nossa Excelência </span>
+                    <span class="display-6 p-2 text-left fw-bold"> Conheça Nossa Excelência </span>
                     <!-- Linha 1 do container -->
                     <!-- Ao invés de usar col-sm-3 em todas as colunas para definir o seu tamanho 
                          eu posso simplesmente usar "row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 text-center", por exemplo, 
@@ -804,10 +735,10 @@
 
 
             <!--===== Requisito RF05 – Consulta de Cursos =====-->
-            <section>
+            <section id="informacoes-sobre-os-cursos" class="mb-5">
                 <!-- Container para a Consulta de Cursos -->
-                <div class="container mb-5"> 
-                    <span class="display-6 p-2 text-left fw-bold" id="informacoes-sobre-os-cursos"> Informações sobre os cursos </span>
+                <div class="container"> 
+                    <span class="display-6 p-2 text-left fw-bold"> Informações sobre os cursos </span>
                     <!-- Linha 1 do container -->
                     <div class="row p-3">
                         <!-- Tabela com Boostrap -->
@@ -897,11 +828,11 @@
 
             <!--===== Requisito RF06 – Formulário de Contato =====-->
             <!-- Incluir tudo isso dentro de um formulário (Tag html) com método GET -->
-            <section>
+            <section id="contato" class="mb-5">
                 <form action="index.html" method="post">
                     <!-- Container para o Formulário de Contato -->
-                    <div class="container mb-5">
-                        <span class="display-6 p-2 text-left fw-bold" id="contato"> Contato </span>
+                    <div class="container">
+                        <span class="display-6 p-2 text-left fw-bold"> Contato </span>
                         <!-- Linha 1 do container -->
                         <div class="row p-2 mt-3">
                             <!-- Coluna 1 da linha 1 -->
@@ -962,18 +893,72 @@
             <!-- Áreas de Ensino => Requisito RF01 – Barra de Navegação -->
             <!-- Linkar com a Navbar no final -->
             <!-- Pedir um texto de apresentação para o Claude e colocar na Seção Principal -->
-            <section>
-                <div class="container mt-5">
-                    <span class="display-6 p-2 text-left fw-bold" id="areas-ensino"> Áreas de Ensino </span>
-                    <div class="row row-cols-md-3 mt-4">
+            <section id="areas-ensino" class="mt-5">
+                <!-- Container para Áreas de Ensino -->
+                <div class="container">
+                    <span class="display-6 text-left fw-bold"> Áreas de Ensino </span>
+                    <!-- Linha 1 do container -->
+                    <div class="row row-cols-md-2 mt-4" id="engenharia-computacao">
+                        <!-- Coluna 1 da linha 1 -->
+                        <div class="col">
+                            <span class="fs-5 fw-bold"> Engenharia da Computação: </span>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> O que é estudado nessa área? </p>
+                            <p class="fs-6 p-2 mb-0"> A Engenharia da Computação une fundamentos de hardware e software, formando profissionais capazes de projetar desde circuitos eletrônicos até sistemas embarcados e arquiteturas computacionais completas. </p>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> Principal diferencial: </p>
+                            <p class="fs-6 p-2 mb-0"> É a única das quatro áreas com forte base em eletrônica e hardware, capacitando o profissional a atuar tanto no desenvolvimento de sistemas quanto na concepção física dos dispositivos que os executam. </p>
+
+                        </div>
 
                     </div>
+                    <!-- Linha 2 -->
+                    <div class="row row-cols-md-2 mt-4">
+                        <!-- Coluna 1 da linha 2 -->
+                        <div class="col">
+                            <span class="fs-5 fw-bold" id="engenharia-software"> Engenharia de Software: </span>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> O que é estudado nessa área? </p>
+                            <p class="fs-6 p-2 mb-0"> A Engenharia de Software foca em todo o ciclo de vida de sistemas complexos — da análise de requisitos ao projeto de arquitetura, testes e manutenção — com ênfase em processos, qualidade e trabalho em equipe. </p>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> Principal diferencial: </p>
+                            <p class="fs-6 p-2 mb-0"> Prioriza metodologias de engenharia aplicadas ao desenvolvimento em larga escala, preparando o profissional para liderar e organizar projetos de software complexos, não apenas programá-los. </p>
+
+                        </div>
+
+                    </div>
+                    <!-- Linha 3 -->
+                    <div class="row row-cols-md-2 mt-4">
+                        <!-- Coluna 1 da linha 3 -->
+                        <div class="col">
+                            <span class="fs-5 fw-bold" id="ciencia-computacao"> Ciência da Computação: </span>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> O que é estudado nessa área? </p>
+                            <p class="fs-6 p-2 mb-0"> A Ciência da Computação explora os fundamentos teóricos e matemáticos da computação, incluindo algoritmos, estruturas de dados, complexidade computacional e inteligência artificial. </p>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> Principal diferencial: </p>
+                            <p class="fs-6 p-2 mb-0"> Tem a base teórica mais sólida entre as quatro áreas, sendo o caminho ideal para quem busca pesquisa, inovação e desenvolvimento de novas tecnologias e algoritmos. </p>
+
+                        </div>
+                        
+                    </div>
+                    <!-- Linha 4 -->
+                    <div class="row row-cols-md-2 mt-4 mb-5">
+                        <!-- Coluna 1 da linha 4 -->
+                        <div class="col">
+                            <span class="fs-5 fw-bold" id="ads"> Análise e Desenvolvimento de Sistemas(ADS): </span>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> O que é estudado nessa área? </p>
+                            <p class="fs-6 p-2 mb-0"> A ADS forma profissionais para o mercado de forma ágil, com foco prático em desenvolvimento de sistemas, banco de dados e metodologias de projeto, em um curso mais curto (tecnólogo). </p>
+                            <p class="fs-6 p-2 mb-0 fw-bold"> Principal diferencial: </p>
+                            <p class="fs-6 p-2 mb-0"> É a formação mais rápida das quatro, voltada diretamente para a prática profissional e inserção ágil no mercado de trabalho. </p>
+
+                        </div>
+                        
+                    </div>
+
                 </div>
+
             </section>
             <!--===============================================-->
 
 
         </main>
+
+
         <!-- Rodapé da página -->
         <!-- Tag HTML que só diz que o conteúdo dentro de seu bloco se trata de um rodapé -->
         <footer>
