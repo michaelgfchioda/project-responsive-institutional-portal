@@ -18,11 +18,23 @@ body {
 /* Rodapé principal da página */
 .footer_personal {
     /* Alterar o conteúdo do rodapé */
-    text-align: center;
-    font-size: 12px;
     color: white;
     /* Configurar Box-Model */
     background-color: #212529;
-    padding: 45px;      /* Distância entre o elemento e a sua própria borda */
-    /* margin-top: 100px;  /* Distância de um elemento para outro */
+    /* Distância entre o elemento e a sua própria borda */
+    padding: 45px;
+}
+
+/* Parte adaptada para o texto de informação */
+.footer_personal .footer_info {
+    /* Alinhamento do texto à esquerda */
+    text-align: left;
+}
+
+/* Parte adaptada para o copyright e ícones */
+.footer_personal .footer_copyright {
+    /* Alinhamento do texto ao centro */
+    text-align: center;
+    /* Tamanho da fonte */
+    font-size: 12px;
 }
