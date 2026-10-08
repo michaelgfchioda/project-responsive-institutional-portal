@@ -1,0 +1,27 @@
+# ====================================
+# Forçar detecção de HTML e CSS no Linguist
+# ====================================
+*.html linguist-detectable=true
+*.html linguist-vendored=false
+*.html linguist-generated=false
+*.css linguist-detectable=true
+*.css linguist-vendored=false
+*.css linguist-generated=false
+
+# =========================================
+# Ignorar arquivos de documentação
+# =========================================
+*.md linguist-detectable=false
+*.txt linguist-detectable=false
+
+# ================================
+# Imagens não contam
+# ================================
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.jpeg linguist-detectable=false
+*.svg linguist-detectable=false
+
+# =============================================================
+# Garantir que apenas código relevante de HTML e CSS entre no cálculo
+# =============================================================
