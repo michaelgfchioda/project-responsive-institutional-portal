@@ -7,8 +7,6 @@
         <title> Projeto Portal Institucional </title>
         <!-- Vincular ao favicon.io da minha foto -->
         <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-        <!-- Vincular ao CSS externo do projeto -->
-        <link rel="stylesheet" href="index.css"/>
         <!-- Vincular ao Framework Boostrap via CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -17,6 +15,8 @@
             crossorigin="anonymous"> </script>
         <!-- Vincular ao Boostrap Icons via CDN (é separado do principal acima) -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+        <!-- Vincular ao CSS externo do projeto -->
+        <link rel="stylesheet" href="index.css"/>
 
     </head>
 
@@ -152,20 +152,21 @@
             <section id="catalogo-de-cursos" class="mt-5 mb-5">
                 <!-- Container do Catálogo de Cursos -->
                 <div class="container">
-                    <h2 class="display-6 p-2 text-left fw-bold"> Catálogo de Cursos </h2>
+                    <h2 class="display-6 p-2 text-start fw-bold"> Catálogo de Cursos </h2>
                     <!-- Linha 1 do container -->
                     <!-- Configurando responsividade para todos os tamanhos de telas -->
                     <!-- "row-cols-1" para deixar 1 card fixo por linha no celular-->
                     <!-- "row-cols-sm-2" para deixar 2 cards fixos por linha em telas pequenas -->
                     <!-- "row-cols-md-3" para deixar 3 cards fixos por linha em telas médias -->
                     <!-- "row-cols-lg-4" para deixar 4 cards fixos por linha em telas grandes -->
-                    <!-- g-4 =>  -->
+                    <!-- g-4 => Espaço de 1,5rem entre as colunas e entre as linhas -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
 
                         <!-- Coluna 1 da linha 1 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Introdução ao Python -->
-                            <div class="card">
+                            <!-- h-100 => Em cada card para deixá-los todos com a mesma altura -->
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -181,9 +182,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalIntPython"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalIntPython"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
                                     
                                 </div>
 
@@ -194,7 +195,7 @@
                         <!-- Coluna 2 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Python: AI, Machine Learning and Deep Learnig -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -210,9 +211,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPythonAI"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPythonAI"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -223,7 +224,7 @@
                         <!-- Coluna 3 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Desenvolvimento Web -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -239,9 +240,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDesenWeb"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalDesenWeb"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -252,7 +253,7 @@
                         <!-- Coluna 4 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Arquitetura de Computadores -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -268,9 +269,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalArqDeComput"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalArqDeComput"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -281,7 +282,7 @@
                         <!-- Coluna 5 -->
                         <div class="col mb-3">
                             <!-- Criando um card para ESP32: Fundamentos -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -297,9 +298,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalESP32Fund"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalESP32Fund"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -310,7 +311,7 @@
                         <!-- Coluna 6 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Teoria da Computação -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -326,9 +327,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTeoriaDaComput"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalTeoriaDaComput"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
                                     
                                 </div>
                                 
@@ -339,7 +340,7 @@
                         <!-- Coluna 7 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Programação Orientada a Objetos com Java -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -355,9 +356,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPOOJava"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalPOOJava"> 
                                         Saiba mais 
-                                    </a>                                    
+                                    </button>
 
                                 </div>
 
@@ -368,7 +369,7 @@
                         <!-- Coluna 8 -->
                         <div class="col mb-3">
                             <!-- Criando um card para Banco de Dados -->
-                            <div class="card">
+                            <div class="card h-100">
                                 <!-- Conteúdo do card -->
                                 <div class="card-body text-center">
                                     <!-- Imagem do card -->
@@ -384,9 +385,9 @@
                                         </p>
                                     </div>
                                     <!-- Botão do card -->
-                                    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBancoDeDados"> 
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalBancoDeDados"> 
                                         Saiba mais 
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -405,8 +406,8 @@
             <!-- Notícias da página => Requisito RF01 – Barra de Navegação -->
             <section id="noticias" class="mb-5">
                 <div class="container">
-                    <h2 class="display-6 p-2 text-left fw-bold"> Notícias </h2>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mt-4">
+                    <h2 class="display-6 p-2 text-start fw-bold"> Notícias </h2>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-4">
                         <div class="col mt-1">
                             <div class="card h-100">
                                 <div class="card-body">
@@ -461,7 +462,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Introdução ao Python </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -489,7 +490,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Python: AI, Machine Learning and Deep Learnig </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -517,7 +518,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Desenvolvimento Web </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -545,7 +546,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Arquitetura de Computadores </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -573,7 +574,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> ESP32: Fundamentos </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -601,7 +602,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Teoria da Computação </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -629,7 +630,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Programação Orientada a Objetos com Java </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -657,7 +658,7 @@
                             <!-- Cabeçalho do modal -->
                             <div class="modal-header">
                                 <h5 class="modal-title"> Banco de Dados </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"> </button>
+                                <button type="button" class="btn-close" aria-label="Fechar" aria-hidden="true" data-bs-dismiss="modal"> </button>
                             </div>
                             <!-- Corpo do modal -->
                             <div class="modal-body">
@@ -686,7 +687,7 @@
                 <!-- Container para Área de Indicadores Institucionais -->
                 <div class="container">
                     <!-- fw-bold => Tranformar o texto em negrito -->
-                    <h2 class="display-6 p-2 text-left fw-bold"> Conheça Nossa Excelência </h2>
+                    <h2 class="display-6 p-2 text-start fw-bold"> Conheça Nossa Excelência </h2>
                     <!-- Linha 1 do container -->
                     <div class="row mt-4">
                         <!-- Coluna 1 -->
@@ -742,7 +743,7 @@
             <section id="informacoes-sobre-os-cursos" class="mb-5">
                 <!-- Container para a Consulta de Cursos -->
                 <div class="container"> 
-                    <h2 class="display-6 p-2 text-left fw-bold"> Informações sobre os cursos </h2>
+                    <h2 class="display-6 p-2 text-start fw-bold"> Informações sobre os cursos </h2>
                     <!-- Linha 1 do container => Tabela responsiva -->
                     <div class="table-responsive">
                         <!-- Tabela com Boostrap -->
@@ -836,7 +837,7 @@
                 <form action="index.html" method="post">
                     <!-- Container para o Formulário de Contato -->
                     <div class="container">
-                        <h2 class="display-6 p-2 text-left fw-bold"> Contato </h2>
+                        <h2 class="display-6 p-2 text-start fw-bold"> Contato </h2>
                         <!-- Linha 1 do container -->
                         <div class="row p-2">
                             <!-- Coluna 1 da linha 1 -->
@@ -902,7 +903,7 @@
             <section id="areas-ensino" class="mt-5">
                 <!-- Container para Áreas de Ensino -->
                 <div class="container">
-                    <h2 class="display-6 text-left fw-bold"> Áreas de Ensino </h2>
+                    <h2 class="display-6 text-start fw-bold"> Áreas de Ensino </h2>
                     <!-- Linha 1 do container -->
                     <div class="row mt-4">
                         <!-- Coluna 1 da linha 1 -->
