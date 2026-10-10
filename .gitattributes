@@ -13,6 +13,11 @@
 # =========================================
 *.md linguist-detectable=false
 *.txt linguist-detectable=false
+# =================================================
+# Desconsiderar a pasta docs/ como documentação e considerar todo 
+# o conteúdo de código que há dentro dela nas estatísticas
+# =================================================
+docs/** linguist-documentation=false
 
 # ================================
 # Imagens não contam
